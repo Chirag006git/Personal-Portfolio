@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Chirag - UI/UX Designer, Web Designer, and Developer with expertise in Webpage Designing, Python, and SQL databases.">
+    <meta name="author" content="Chirag">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Chirag | UI/UX & Web Designer Portfolio">
+    <meta property="og:description" content="Creative UI/UX Designer and Webpage Designer with coding capabilities in Python and SQL.">
+    <meta property="og:type" content="website">
+    
+    <title>Chirag | UI/UX & Web Designer Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home" id="brand-logo">
+                <span class="text-gradient-rose">CHIRAG</span>
+            </a>
+            <button class="navbar-toggler mobile-menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-custom">MENU</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="portfolioNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#home" id="nav-link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#about" id="nav-link-about">About & Credentials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#skills" id="nav-link-skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#projects" id="nav-link-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#contact" id="nav-link-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 py-5 reveal-on-scroll">
+                    <span class="hero-subtitle mb-3 d-inline-block">Welcome to my space</span>
+                    <h1 class="hero-title font-serif mb-4">
+                        Hi, I'm <span class="text-gradient-rose">Chirag</span>.<br>
+                        I design & build.
+                    </h1>
+                    <h2 class="h4 mb-4 text-white">
+                        Specialized in <span id="typed-text" class="text-rose-gold">UI/UX Designer</span>
+                    </h2>
+                    <p class="hero-description mb-5">
+                        Creative designer bridging the gap between aesthetics and function. Armed with professional expertise in Webpage Designing, solid coding skills in Python, and structural data querying using SQL.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-rose-solid" id="hero-btn-work">View Projects</a>
+                        <a href="#contact" class="btn btn-rose-outline" id="hero-btn-contact">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 py-5 d-none d-lg-block text-center reveal-on-scroll">
+                    <!-- Stylized visual layout representing UX/Code solid layout -->
+                    <div class="position-relative d-inline-block">
+                        <div class="card-solid text-start" style="width: 380px; transform: rotate(-3deg);">
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="badge bg-secondary me-2" style="background-color: var(--color-rose-gold) !important; color: var(--color-bg-base);">UI/UX</span>
+                                <span class="badge bg-dark border border-secondary text-secondary">PROTOTYPING</span>
+                            </div>
+                            <h3 class="h5 mb-3">Aesthetics Meet Logic</h3>
+                            <p class="text-secondary small mb-4">Crafting pixel-perfect interface structures while maintaining clean code architecture underneath.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-rose-gold font-serif small">Chirag Portfolio</span>
+                                <i data-lucide="arrow-up-right" class="text-rose-gold"></i>
+                            </div>
+                        </div>
+                        <div class="card-solid text-start position-absolute" style="width: 320px; top: 120px; left: -80px; transform: rotate(4deg); border-color: var(--color-rose-gold);">
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="small text-rose-gold">&lt;code&gt;</span>
+                                <span class="small text-secondary">python & sql</span>
+                            </div>
+                            <pre class="m-0 text-white small" style="font-family: monospace; font-size: 0.8rem; background: var(--color-bg-base); padding: 10px; border-radius: 4px; border: 1px solid var(--border-color);">
+def design_ux(wireframe):
+    if wireframe.is_solid:
+        return deploy_db()
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Credentials Section -->
+    <section id="about" class="section-padding bg-black-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0 reveal-on-scroll">
+                    <h2 class="section-title">About & Credentials</h2>
+                    <p class="text-secondary mb-4">
+                        I am a dedicated UI/UX Designer and Web Designer who loves translating complex concepts into delightful visual experiences. With a firm grasp on logic and data structures, I complement my design skills with Python scripting and database optimization.
+                    </p>
+                    <div class="card-solid p-4 mb-4">
+                        <h3 class="h6 text-rose-gold text-uppercase mb-3">Core Philosophies</h3>
+                        <ul class="list-unstyled text-secondary small mb-0">
+                            <li class="mb-2"><i data-lucide="check" class="text-rose-gold me-2" style="width: 16px;"></i> User-First Structural Frameworks</li>
+                            <li class="mb-2"><i data-lucide="check" class="text-rose-gold me-2" style="width: 16px;"></i> Solid Minimalist Visual Geometry</li>
+                            <li class="mb-2"><i data-lucide="check" class="text-rose-gold me-2" style="width: 16px;"></i> Clean Code & Performance Tuning</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 reveal-on-scroll">
+                    <h3 class="h4 mb-4 font-serif text-rose-gold">Education & Certifications</h3>
+                    <div class="timeline">
+                        <!-- Education item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">Certified Course</div>
+                            <h4 class="timeline-title">Webpage Designing Specialization</h4>
+                            <div class="timeline-institution">Creative Media Institute</div>
+                            <p class="text-secondary small">
+                                Mastered advanced semantics of HTML5, responsive grid structures using Bootstrap 5, custom styles and transitions with CSS3, and dynamic behaviors using client-side JavaScript.
+                            </p>
+                        </div>
+                        
+                        <!-- Education item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">Developer Program</div>
+                            <h4 class="timeline-title">Python Programming Certification</h4>
+                            <div class="timeline-institution">Software Development Board</div>
+                            <p class="text-secondary small">
+                                Gained proficiency in core Python programming, data structures, scripting, web scraping, and automation models to support interactive web modules.
+                            </p>
+                        </div>
+                        
+                        <!-- Education item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">Database Training</div>
+                            <h4 class="timeline-title">SQL Database & Schema Design</h4>
+                            <div class="timeline-institution">Tech Academy</div>
+                            <p class="text-secondary small">
+                                Acquired training in relational database theories, SQL queries, table join queries, indexing optimizations, and designing application backends.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <h2 class="section-title">My Skillset</h2>
+                <p class="text-secondary max-width-600 mx-auto">
+                    A balanced blend of analytical logic and visual style. Here is my current mastery list:
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Skill 1 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="layout" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">UI/UX Design</h3>
+                        <p class="text-secondary small mb-0">Wireframing, Prototyping, Figma, User Flows</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="88"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="code-2" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">Web Designing</h3>
+                        <p class="text-secondary small mb-0">HTML5, CSS3, Javascript, Bootstrap 5</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="92"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="terminal" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">Python Scripting</h3>
+                        <p class="text-secondary small mb-0">Automation, Scraping, Scripting Logic</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="database" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">SQL Databases</h3>
+                        <p class="text-secondary small mb-0">Relational Design, Query Tuning, Joins</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-black-50">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <h2 class="section-title">Projects Showcase</h2>
+                <p class="text-secondary max-width-600 mx-auto">
+                    Explore my creative designs and structural coding projects.
+                </p>
+                
+                <!-- Filters -->
+                <div class="d-flex justify-content-center flex-wrap mt-4">
+                    <button class="filter-btn active" data-filter="all" id="filter-btn-all">All Projects</button>
+                    <button class="filter-btn" data-filter="uiux" id="filter-btn-uiux">UI/UX & Design</button>
+                    <button class="filter-btn" data-filter="webdev" id="filter-btn-webdev">Web & Scripting</button>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1: UI/UX -->
+                <div class="col-md-6 project-item reveal-on-scroll" data-category="uiux">
+                    <div class="project-card">
+                        <img src="uiux_project_dashboard.png" alt="Aura Dash Dashboard Design Mockup" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">UI/UX Case Study</span>
+                            <h3 class="project-title font-serif">Aura Dash - Solid Editorial Platform</h3>
+                            <p class="project-description">
+                                A high-end editorial and analytical dashboard design built using Figma. Highlights dark-mode solid cards and rose gold key metric widgets.
+                            </p>
+                            <a href="#" class="project-link" id="project-link-1">
+                                View Case Study <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Web Dev -->
+                <div class="col-md-6 project-item reveal-on-scroll" data-category="webdev">
+                    <div class="project-card">
+                        <img src="python_sql_app.png" alt="Nexus Engine - Python Web Dashboard with SQL Database Backend" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">Python & SQL App</span>
+                            <h3 class="project-title font-serif">Nexus DB Engine</h3>
+                            <p class="project-description">
+                                An active data parsing interface built with HTML5, CSS styling, and a Python script engine querying a structured SQL database.
+                            </p>
+                            <a href="#" class="project-link" id="project-link-2">
+                                View Repository <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: UI/UX -->
+                <div class="col-md-6 project-item reveal-on-scroll" data-category="uiux">
+                    <div class="project-card">
+                        <img src="web_design_project.png" alt="Solis Creative Studio - Solid Grid Portfolio Webpage Design" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">Webpage Designing</span>
+                            <h3 class="project-title font-serif">Solis Portfolio Grid</h3>
+                            <p class="project-description">
+                                Editorial portfolio design showcase exploring non-glass, solid minimalist layouts with striking offsets and premium modern type scales.
+                            </p>
+                            <a href="#" class="project-link" id="project-link-3">
+                                View Wireframe <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Web Dev -->
+                <div class="col-md-6 project-item reveal-on-scroll" data-category="webdev">
+                    <div class="project-card">
+                        <!-- We reuse the dashboard background styled differently -->
+                        <img src="python_sql_app.png" alt="ScriptDB Automation Scripting Console Layout" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">Python Automation</span>
+                            <h3 class="project-title font-serif">ScriptDB CLI Automation</h3>
+                            <p class="project-description">
+                                Python automation program extracting logs from flat web servers, structuring data schemas, and inserting elements into custom SQL relations.
+                            </p>
+                            <a href="#" class="project-link" id="project-link-4">
+                                View Code File <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0 reveal-on-scroll">
+                    <h2 class="section-title">Start A Conversation</h2>
+                    <p class="text-secondary mb-5">
+                        Have an interesting project, wireframing needs, or programming scripts to automate? Shoot me a message. I'm always open to discussing new visual concepts and database schemas.
+                    </p>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="skill-icon-wrap m-0 me-3">
+                            <i data-lucide="mail" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div>
+                            <div class="text-muted small text-uppercase">Email Me</div>
+                            <a href="mailto:chirag@example.com" class="text-rose-gold text-decoration-none fw-semibold">chirag@example.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="skill-icon-wrap m-0 me-3">
+                            <i data-lucide="map-pin" style="width: 22px; height: 22px;"></i>
+                        </div>
+                        <div>
+                            <div class="text-muted small text-uppercase">Based In</div>
+                            <span class="text-white fw-semibold">India</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 reveal-on-scroll">
+                    <div class="card-solid">
+                        <h3 class="h4 mb-4 font-serif text-rose-gold">Send Message</h3>
+                        <form id="portfolioContactForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contact-name" class="form-label text-secondary small">Your Name</label>
+                                    <input type="text" class="form-control contact-input" id="contact-name" placeholder="John Doe" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contact-email" class="form-label text-secondary small">Email Address</label>
+                                    <input type="email" class="form-control contact-input" id="contact-email" placeholder="john@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-subject" class="form-label text-secondary small">Subject</label>
+                                <input type="text" class="form-control contact-input" id="contact-subject" placeholder="Project Collaboration" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="contact-message" class="form-label text-secondary small">Message</label>
+                                <textarea class="form-control contact-input" id="contact-message" rows="5" placeholder="Tell me about your design or coding needs..." required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <button type="submit" class="btn btn-rose-solid w-100" id="contact-submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="social-link" aria-label="LinkedIn" id="social-linkedin">
+                    <i data-lucide="linkedin" style="width: 20px;"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="GitHub" id="social-github">
+                    <i data-lucide="github" style="width: 20px;"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Dribbble" id="social-dribbble">
+                    <i data-lucide="dribbble" style="width: 20px;"></i>
+                </a>
+            </div>
+            <p class="text-secondary small mb-0">
+                &copy; 2026 Chirag. Crafted with Bootstrap 5. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast-container">
+        <div class="toast-custom" id="toast-notification">
+            <i data-lucide="check-circle" class="toast-icon" style="width: 24px; height: 24px;"></i>
+            <div>
+                <strong class="d-block text-rose-gold">Message Sent!</strong>
+                <span class="small text-secondary">Thank you for reaching out. I will get back to you shortly.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide vector icons
+        lucide.createIcons();
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>

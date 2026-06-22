@@ -348,6 +348,8 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     height: 100%;
     transition: var(--transition-bounce);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card-image {
@@ -365,6 +367,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-card-body {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-tag {
@@ -382,15 +387,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 12px;
 }
 
-.project-description {
+.project-bullets {
     color: var(--color-text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    height: 70px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    padding-left: 1.25rem;
+    list-style-type: none;
+}
+
+.project-bullets li {
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.project-bullets li::before {
+    content: "•";
+    color: var(--color-rose-gold);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .project-link {
@@ -401,6 +418,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 8px;
     transition: var(--transition-smooth);
+    margin-top: auto;
 }
 
 .project-link:hover {

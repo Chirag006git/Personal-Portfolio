@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Dynamic Typing Effect
     const typeTarget = document.getElementById('typed-text');
     if (typeTarget) {
-        const words = ['UI/UX Designer', 'Web Designer', 'Python Programmer', 'SQL Developer'];
+        const words = ['Computer Scientist', 'Webpage Designer', 'Python Developer', 'SQL Database Designer'];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;

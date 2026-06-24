@@ -154,50 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 6. Contact Form Submission & Toast
-    const contactForm = document.getElementById('portfolioContactForm');
-    const toast = document.getElementById('toast-notification');
-    
-    if (contactForm && toast) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Check form validity
-            if (!contactForm.checkValidity()) {
-                e.stopPropagation();
-                contactForm.classList.add('was-validated');
-                return;
-            }
 
-            // Mock submission success
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalBtnText = submitBtn.innerHTML;
-            
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
-            
-            setTimeout(() => {
-                // Show success toast
-                toast.style.display = 'flex';
-                
-                // Reset button and form
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnText;
-                contactForm.reset();
-                contactForm.classList.remove('was-validated');
-
-                // Hide toast after 4 seconds
-                setTimeout(() => {
-                    toast.style.animation = 'slideInRight 0.3s reverse forwards';
-                    setTimeout(() => {
-                        toast.style.display = 'none';
-                        toast.style.animation = ''; // Reset animation style
-                    }, 300);
-                }, 4000);
-
-            }, 1500);
-        });
-    }
     
     // Close navbar on mobile after selection
     const navItems = document.querySelectorAll('.nav-link-custom');

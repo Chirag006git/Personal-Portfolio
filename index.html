@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Chirag Pateliya - Computer Science Student, Webpage Designer, and Developer with expertise in Python, SQL, C, and Java.">
+    <meta name="author" content="Chirag Pateliya">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Chirag Pateliya | BSc. Computer Science Portfolio">
+    <meta property="og:description" content="Portfolio of Chirag Pateliya, a BSc. Computer Science student at Gisma University. Web designer and developer skilled in Python, SQL, C, and Java.">
+    <meta property="og:type" content="website">
+    
+    <title>Chirag Pateliya | BSc. Computer Science Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5d02454800.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home" id="brand-logo">
+                <span class="text-gradient-rose">CHIRAG PATELIYA</span>
+            </a>
+            <button class="navbar-toggler mobile-menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-custom">MENU</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="portfolioNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#home" id="nav-link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#about" id="nav-link-about">About & Credentials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#skills" id="nav-link-skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#projects" id="nav-link-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#contact" id="nav-link-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 py-5 reveal-on-scroll">
+                    <span class="hero-subtitle mb-3 d-inline-block">Welcome to my space</span>
+                    <h1 class="hero-title font-serif mb-4">
+                        Hi, I'm <span class="text-gradient-rose">Chirag Pateliya</span>.<br>
+                        I design & build.
+                    </h1>
+                    <h2 class="h4 mb-4 text-white">
+                        Aspiring <span id="typed-text" class="text-rose-gold">Computer Scientist</span>
+                    </h2>
+                    <p class="hero-description mb-5">
+                        BSc. Computer Science student at Gisma University of Applied Sciences. Specialized in webpage designing, Python programming, relational SQL databases, and core software development.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#projects" class="btn btn-rose-solid" id="hero-btn-work">View Projects</a>
+                        <a href="#contact" class="btn btn-rose-outline" id="hero-btn-contact">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 py-5 d-none d-lg-block text-center reveal-on-scroll">
+                    <!-- Stylized visual layout representing UX/Code solid layout -->
+                    <div class="position-relative d-inline-block">
+                        <div class="card-solid text-start" style="width: 380px; transform: rotate(-3deg);">
+                            <div class="d-flex align-items-center mb-4">
+                                <span class="badge bg-secondary me-2" style="background-color: var(--color-rose-gold) !important; color: var(--color-bg-base);">COMPUTER SCIENCE</span>
+                                <span class="badge bg-dark border border-secondary text-secondary">WEB DESIGN</span>
+                            </div>
+                            <h3 class="h5 mb-3">Aesthetics Meet Logic</h3>
+                            <p class="text-secondary small mb-4">Crafting responsive and clean webpage structures while writing efficient algorithms and database queries.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-rose-gold font-serif small">Chirag Pateliya Portfolio</span>
+                                <i data-lucide="arrow-up-right" class="text-rose-gold"></i>
+                            </div>
+                        </div>
+                        <div class="card-solid text-start position-absolute" style="width: 320px; top: 120px; left: -80px; transform: rotate(4deg); border-color: var(--color-rose-gold);">
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="small text-rose-gold">&lt;code&gt;</span>
+                                <span class="small text-secondary">python & sql</span>
+                            </div>
+                            <pre class="m-0 text-white small" style="font-family: monospace; font-size: 0.8rem; background: var(--color-bg-base); padding: 10px; border-radius: 4px; border: 1px solid var(--border-color);">
+def init_portfolio():
+    user = "Chirag Pateliya"
+    skills = ["Python", "SQL", "Web"]
+    return deploy(user, skills)
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Credentials Section -->
+    <section id="about" class="section-padding bg-black-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0 reveal-on-scroll">
+                    <h2 class="section-title">About & Credentials</h2>
+                    <p class="text-secondary mb-4">
+                        I am a BSc. Computer Science student at Gisma University of Applied Sciences with a strong passion for web development and software engineering. I combine creative webpage design capabilities with strong foundation Python programming, database engineering in SQL, and fundamental logic in C and Java. I focus on developing clean, responsive interfaces built on reliable logic patterns.
+                    </p>
+                    <div class="card-solid p-4 mb-3">
+                        <h3 class="h6 text-rose-gold text-uppercase mb-3">Core Philosophies</h3>
+                        <ul class="list-unstyled text-secondary small mb-0">
+                            <li class="mb-2"><i data-lucide="check" class="text-rose-gold me-2" style="width: 16px;"></i> User-First Structural Frameworks</li>
+                            <li class="mb-2"><i data-lucide="check" class="text-rose-gold me-2" style="width: 16px;"></i> Solid Minimalist Visual Geometry</li>
+                            <li class="mb-2"><i data-lucide="check" class="text-rose-gold me-2" style="width: 16px;"></i> Clean Code & Performance Tuning</li>
+                        </ul>
+                    </div>
+                    <div class="card-solid p-4">
+                        <h3 class="h6 text-rose-gold text-uppercase mb-3">Personal Details</h3>
+                        <ul class="list-unstyled text-secondary small mb-0">
+                            <li class="mb-2"><i data-lucide="calendar" class="text-rose-gold me-2" style="width: 16px;"></i> <strong>DOB:</strong> January 2006</li>
+                            <li class="mb-2"><i data-lucide="mail" class="text-rose-gold me-2" style="width: 16px;"></i> <strong>Email:</strong> <a href="mailto:pateliya.adnc06@gmail.com" class="text-rose-gold text-decoration-none">pateliya.adnc06@gmail.com</a></li>
+                            <li class="mb-2"><i data-lucide="github" class="text-rose-gold me-2" style="width: 16px;"></i> <strong>GitHub:</strong> <a href="https://github.com/ChiragPateliya06" target="_blank" class="text-rose-gold text-decoration-none">ChiragPateliya06</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 reveal-on-scroll">
+                    <h3 class="h4 mb-4 font-serif text-rose-gold">Education & Certifications</h3>
+                    <div class="timeline">
+                        <!-- Education item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">Since April 2025</div>
+                            <h4 class="timeline-title">BSc. Computer Science</h4>
+                            <div class="timeline-institution">Gisma University of Applied Sciences</div>
+                        </div>
+                        
+                        <!-- Education item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">Completed 2023</div>
+                            <h4 class="timeline-title">HSC (12th Grade)</h4>
+                            <div class="timeline-institution">Board Certification</div>
+                            <p class="text-secondary small">
+                                Completed Higher Secondary Certificate (12th Grade) with a science curriculum emphasis, focusing on Mathematics, Physics, Chemistry, and Computer Application basics.
+                            </p>
+                        </div>
+                        
+                        <!-- Certification item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">ITC Mogri Certification</div>
+                            <h4 class="timeline-title">Webpage Designing</h4>
+                            <div class="timeline-institution">ITC Mogri</div>
+                            <p class="text-secondary small">
+                                Certified for webpage design skills covering HTML5, CSS3, and JavaScript logic. Focused on creating user-friendly, responsive interfaces with clean layout semantics, responsive grid frameworks, and simple client-side event interactions.
+                            </p>
+                        </div>
+                        
+                        <!-- Certification item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">ITC Mogri Certification</div>
+                            <h4 class="timeline-title">Intermediate Python Programming</h4>
+                            <div class="timeline-institution">ITC Mogri</div>
+                            <p class="text-secondary small">
+                                Certified in intermediate Python programming concepts. Focused on logic design, utility scripting, file processing pipelines, algorithm structures, and basic object-oriented programming concepts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <h2 class="section-title">My Skillset</h2>
+                <p class="text-secondary max-width-600 mx-auto">
+                    A balanced blend of analytical logic and visual style. Here is my current mastery list:
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Skill 1 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="code-2" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">Web Designing</h3>
+                        <p class="text-secondary small mb-0">HTML5, CSS3, Javascript, layouts</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="92"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="terminal" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">Python Programming</h3>
+                        <p class="text-secondary small mb-0">Intermediate scripting, automation, algorithms</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="database" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">SQL Databases</h3>
+                        <p class="text-secondary small mb-0">Relational schemas, queries, optimization</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="80"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="col-md-6 col-lg-3 reveal-on-scroll">
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <i data-lucide="braces" style="width: 28px; height: 28px;"></i>
+                        </div>
+                        <h3 class="skill-name">Basic C & Java</h3>
+                        <p class="text-secondary small mb-0">Core coding logic, OOP concepts, compilers</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" data-level="55"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-black-50">
+        <div class="container">
+            <div class="text-center mb-5 reveal-on-scroll">
+                <h2 class="section-title">Projects Showcase</h2>
+                <p class="text-secondary max-width-600 mx-auto">
+                    Explore my coding repositories on GitHub spanning web design, programming, and database systems.
+                </p>
+                
+                <!-- Filters -->
+                <div class="d-flex justify-content-center flex-wrap mt-4">
+                    <button class="filter-btn active" data-filter="all" id="filter-btn-all">All Projects</button>
+                    <button class="filter-btn" data-filter="webpage" id="filter-btn-webpage">Webpages</button>
+                    <button class="filter-btn" data-filter="python" id="filter-btn-python">Python Projects</button>
+                    <button class="filter-btn" data-filter="sql" id="filter-btn-sql">SQL Databases</button>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Project 1: Webpages -->
+                <div class="col-md-6 col-lg-4 project-item reveal-on-scroll" data-category="webpage">
+                    <div class="project-card">
+                        <img src="web_design_project.png" alt="Portfolio Webpage Design Mockup" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">Webpage Designing</span>
+                            <h3 class="project-title font-serif">Responsive Webpage Showcase</h3>
+                            <ul class="project-bullets">
+                                <li>Developed a comprehensive repository containing creative webpage layouts, exploring modern CSS grid layouts, flexbox structures, and clean visual patterns.</li>
+                                <li>Designed interfaces featuring smooth scroll mechanics, CSS variables for global coloring, and subtle interactive animations.</li>
+                                <li>Implemented native JavaScript features like responsive menu states, interactive filters, and scroll tracking to optimize user navigation.</li>
+                            </ul>
+                            <a href="https://github.com/ChiragPateliya06" target="_blank" class="project-link" id="project-link-1">
+                                View Repository <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Python Project -->
+                <div class="col-md-6 col-lg-4 project-item reveal-on-scroll" data-category="python">
+                    <div class="project-card">
+                        <img src="uiux_project_dashboard.png" alt="Python Scripting Suite Visual Mockup" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">Python Project</span>
+                            <h3 class="project-title font-serif">Python Programming Suite</h3>
+                            <ul class="project-bullets">
+                                <li>Programmed a modular suite of intermediate Python scripts to automate administrative tasks, parse structured text, and perform local file operations.</li>
+                                <li>Utilized standard libraries for data management, structured logic trees, and exception handling protocols.</li>
+                                <li>Focused on writing reusable functions, optimized loop logic, and clear documentation structure.</li>
+                            </ul>
+                            <a href="https://github.com/ChiragPateliya06" target="_blank" class="project-link" id="project-link-2">
+                                View Repository <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: SQL Database -->
+                <div class="col-md-6 col-lg-4 project-item reveal-on-scroll" data-category="sql">
+                    <div class="project-card">
+                        <img src="python_sql_app.png" alt="SQL Schema & Query Dashboard Visual Mockup" class="project-card-image">
+                        <div class="project-card-body">
+                            <span class="project-tag">SQL Database</span>
+                            <h3 class="project-title font-serif">Relational Database Schemas</h3>
+                            <ul class="project-bullets">
+                                <li>Designed and structured relational database schemas, including Entity-Relationship Diagrams (ERDs) and schema normalization models.</li>
+                                <li>Wrote optimized SQL queries utilizing complex join operations, filtering clauses, and grouping functions.</li>
+                                <li>Profiled query operations to analyze and improve index utilization, table relations, and transaction speeds.</li>
+                            </ul>
+                            <a href="https://github.com/ChiragPateliya06" target="_blank" class="project-link" id="project-link-3">
+                                View Repository <i data-lucide="arrow-right" style="width: 18px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container reveal-on-scroll">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="text-secondary max-width-600 mx-auto">
+                    Have an interesting webpage design project, Python programming challenge, or SQL database system to develop? Reach out to me directly through any of the channels below.
+                </p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Email Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-solid h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <div class="skill-icon-wrap mb-3">
+                            <i data-lucide="mail" style="width: 26px; height: 26px;"></i>
+                        </div>
+                        <h3 class="h5 mb-2 font-serif text-rose-gold">Email Me</h3>
+                        <p class="text-secondary small mb-4">Send an email directly for inquiries and collaborations.</p>
+                        <a href="mailto:pateliya.adnc06@gmail.com" class="btn btn-rose-solid w-100 btn-sm mt-auto">pateliya.adnc06@gmail.com</a>
+                    </div>
+                </div>
+                
+                <!-- Location Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-solid h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <div class="skill-icon-wrap mb-3">
+                            <i data-lucide="map-pin" style="width: 26px; height: 26px;"></i>
+                        </div>
+                        <h3 class="h5 mb-2 font-serif text-rose-gold">Location</h3>
+                        <p class="text-secondary small mb-4">Based in Germany, open to remote and local roles.</p>
+                        <span class="text-white fw-semibold mt-auto py-2">Berlin, Germany</span>
+                    </div>
+                </div>
+                
+                <!-- GitHub Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-solid h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <div class="skill-icon-wrap mb-3">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h3 class="h5 mb-2 font-serif text-rose-gold">GitHub</h3>
+                        <p class="text-secondary small mb-4">Check out my codebase repositories and project files.</p>
+                        <a href="https://github.com/ChiragPateliya06" target="_blank" class="btn btn-rose-solid w-100 btn-sm mt-auto">Visit GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container text-center">
+            
+            <p class="text-secondary small mb-0">
+                &copy; 2026 Chirag Pateliya. Crafted with Bootstrap 5. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide vector icons
+        lucide.createIcons();
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
